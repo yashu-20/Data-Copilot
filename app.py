@@ -180,3 +180,23 @@ else:
     st.warning("No data loaded.")
 
 st.success(f"Runtime: {round(time.time() - start, 2)}s")
+
+
+import streamlit.components.v1 as components
+
+# Google Analytics snippet (replace 'G-H863P6928M' with your own tracking ID if needed)
+GA_TAG = """
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-H863P6928M"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-H863P6928M');
+</script>
+"""
+
+# Inject into Streamlit (height=0 so it's invisible)
+components.html(GA_TAG, height=0)
+
+
