@@ -1,8 +1,52 @@
-# .gitignore
-venv/
-*.csv
-*.dll
-*.pyc
+# === Python related ===
 __pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# === Virtual environments ===
+venv/
+.env/
 .env
+
+# === Streamlit cache ===
+.streamlit/config.toml
+.streamlit/*.json
+
+# === Jupyter notebooks checkpoint (if any) ===
+.ipynb_checkpoints/
+
+# === Operating System ===
+.DS_Store
+Thumbs.db
+
+# === Log and temp files ===
 *.log
+*.tmp
+*.swp
+*~
+
+# === Large binary/data files ===
+*.dll
+*.csv
+*.zip
+*.tar
+*.rar
+*.7z
+
+# === Reports and Outputs ===
+*.pdf
+*.xlsx
+*.docx
+
+# === IDEs ===
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# === Git ===
+*.orig
