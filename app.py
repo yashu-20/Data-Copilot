@@ -1,3 +1,8 @@
+import streamlit.components.v1 as components
+
+# Embed GA tracker
+components.iframe("https://yashu-20.github.io/Data-Copilot/ga_embed.html", height=0)
+
 import time
 start = time.time()
 
